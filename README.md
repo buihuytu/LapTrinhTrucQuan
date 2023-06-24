@@ -11,3 +11,4 @@ BTL LapTrinhTrucQuan
 7. Báo cáo danh sách hoá đơn và tổng tiền nhập hàng từ một Nhà cung cấp chọn trước.
 8. Báo cáo doanh thu của cửa hàng theo năm chọn trước.				
 9. Báo cáo ds các hoá đơn bán của một mặt hàng được chọn trước
+10. Đăng nhập, đăng xuất, tạo tài khoản
