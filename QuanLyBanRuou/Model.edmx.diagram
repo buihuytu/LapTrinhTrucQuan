@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ab93d8e780ac4d78ada2bcb6b87dc503" Name="Diagram1">
+        <EntityTypeShape EntityType="QLBRModel.ChatLieu" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.ChiTietHoaDonBan" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.ChiTietHoaDonNhap" Width="1.5" PointX="8.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.CongDung" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.CongViec" Width="1.5" PointX="1.5" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.DMHangHoa" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.DoRuou" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.DungLuong" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.HinhDang" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.HoaDonBan" Width="1.5" PointX="3" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.HoaDonNhap" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.Khachhang" Width="1.5" PointX="0.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.Loai" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.MauSac" Width="1.5" PointX="0.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.NhaCungCap" Width="1.5" PointX="3.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.NhanVien" Width="1.5" PointX="0.75" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBRModel.NuocSanXuat" Width="1.5" PointX="0.75" PointY="20.5" IsExpanded="true" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__macha__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__ChiTietHo__mahan__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__ChiTietHo__sohdb__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__ChiTietHo__mahan__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__ChiTietHo__sohdn__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__macon__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__NhanVien__macv__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__mado__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__madun__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__mahin__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__maloa__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__mamau__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__DMHangHoa__manuo__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__HoaDonBan__makha__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__HoaDonBan__manha__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__HoaDonNha__mancc__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBRModel.FK__HoaDonNha__manha__52593CB8" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

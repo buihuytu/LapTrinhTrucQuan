@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85292804-E762-4437-88CD-58D9C7BD494B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyBanRuou</RootNamespace>
+    <AssemblyName>QuanLyBanRuou</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cau6_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cau8_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cau9_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChatLieu.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietHoaDonBan.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietHoaDonNhap.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CongDung.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CongViec.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataConnection.cs" />
+    <Compile Include="DMHangHoa.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoRuou.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DungLuong.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fAddBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddBill.Designer.cs">
+      <DependentUpon>fAddBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddProduct.Designer.cs">
+      <DependentUpon>fAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFindBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFindBill.Designer.cs">
+      <DependentUpon>fFindBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFindProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFindProduct.Designer.cs">
+      <DependentUpon>fFindProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogIn.Designer.cs">
+      <DependentUpon>fLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddKHvNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddKHvNCC.Designer.cs">
+      <DependentUpon>fAddKHvNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFindEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFindEmployee.designer.cs">
+      <DependentUpon>fFindEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEmployee.designer.cs">
+      <DependentUpon>fAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFindKHvNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFindKHvNCC.designer.cs">
+      <DependentUpon>fFindKHvNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistic1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistic1.Designer.cs">
+      <DependentUpon>fStatistic1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistic2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistic2.Designer.cs">
+      <DependentUpon>fStatistic2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistic3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistic3.Designer.cs">
+      <DependentUpon>fStatistic3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistic4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistic4.Designer.cs">
+      <DependentUpon>fStatistic4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HinhDang.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonBan.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonNhap.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Khachhang.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Loai.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MauSac.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="NhaCungCap.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NuocSanXuat.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fAddBill.resx">
+      <DependentUpon>fAddBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddProduct.resx">
+      <DependentUpon>fAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFindBill.resx">
+      <DependentUpon>fFindBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFindProduct.resx">
+      <DependentUpon>fFindProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogIn.resx">
+      <DependentUpon>fLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddKHvNCC.resx">
+      <DependentUpon>fAddKHvNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFindEmployee.resx">
+      <DependentUpon>fFindEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddEmployee.resx">
+      <DependentUpon>fAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFindKHvNCC.resx">
+      <DependentUpon>fFindKHvNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStatistic1.resx">
+      <DependentUpon>fStatistic1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStatistic2.resx">
+      <DependentUpon>fStatistic2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStatistic3.resx">
+      <DependentUpon>fStatistic3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStatistic4.resx">
+      <DependentUpon>fStatistic4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\JOHNNIE_WALKER_LOGO.jpg" />
+    <None Include="Resources\Screenshot 2022-05-06 104832.png" />
+    <None Include="Resources\Screenshot 2022-05-06 104005.png" />
+    <None Include="Resources\ruou-1.png" />
+    <None Include="Resources\Screenshot 2022-05-06 101337.png" />
+    <None Include="Resources\Lovepik_com-500770934-bar-drinks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

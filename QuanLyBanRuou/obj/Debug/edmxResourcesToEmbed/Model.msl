@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLBRModelStoreContainer" CdmEntityContainer="QLBREntities">
+    <EntitySetMapping Name="ChatLieux">
+      <EntityTypeMapping TypeName="QLBRModel.ChatLieu">
+        <MappingFragment StoreEntitySet="ChatLieu">
+          <ScalarProperty Name="machatlieu" ColumnName="machatlieu" />
+          <ScalarProperty Name="tenchatlieu" ColumnName="tenchatlieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietHoaDonBans">
+      <EntityTypeMapping TypeName="QLBRModel.ChiTietHoaDonBan">
+        <MappingFragment StoreEntitySet="ChiTietHoaDonBan">
+          <ScalarProperty Name="sohdb" ColumnName="sohdb" />
+          <ScalarProperty Name="mahang" ColumnName="mahang" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="dongia" ColumnName="dongia" />
+          <ScalarProperty Name="giamgia" ColumnName="giamgia" />
+          <ScalarProperty Name="thanhtien" ColumnName="thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietHoaDonNhaps">
+      <EntityTypeMapping TypeName="QLBRModel.ChiTietHoaDonNhap">
+        <MappingFragment StoreEntitySet="ChiTietHoaDonNhap">
+          <ScalarProperty Name="sohdn" ColumnName="sohdn" />
+          <ScalarProperty Name="mahang" ColumnName="mahang" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="dongia" ColumnName="dongia" />
+          <ScalarProperty Name="giamgia" ColumnName="giamgia" />
+          <ScalarProperty Name="thanhtien" ColumnName="thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CongDungs">
+      <EntityTypeMapping TypeName="QLBRModel.CongDung">
+        <MappingFragment StoreEntitySet="CongDung">
+          <ScalarProperty Name="macongdung" ColumnName="macongdung" />
+          <ScalarProperty Name="tencongdung" ColumnName="tencongdung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CongViecs">
+      <EntityTypeMapping TypeName="QLBRModel.CongViec">
+        <MappingFragment StoreEntitySet="CongViec">
+          <ScalarProperty Name="macv" ColumnName="macv" />
+          <ScalarProperty Name="tencv" ColumnName="tencv" />
+          <ScalarProperty Name="mucluong" ColumnName="mucluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DMHangHoas">
+      <EntityTypeMapping TypeName="QLBRModel.DMHangHoa">
+        <MappingFragment StoreEntitySet="DMHangHoa">
+          <ScalarProperty Name="mahang" ColumnName="mahang" />
+          <ScalarProperty Name="tenhang" ColumnName="tenhang" />
+          <ScalarProperty Name="maloai" ColumnName="maloai" />
+          <ScalarProperty Name="madungluong" ColumnName="madungluong" />
+          <ScalarProperty Name="macongdung" ColumnName="macongdung" />
+          <ScalarProperty Name="machatlieu" ColumnName="machatlieu" />
+          <ScalarProperty Name="mahinhdang" ColumnName="mahinhdang" />
+          <ScalarProperty Name="mado" ColumnName="mado" />
+          <ScalarProperty Name="mamau" ColumnName="mamau" />
+          <ScalarProperty Name="manuocsx" ColumnName="manuocsx" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="dongianhap" ColumnName="dongianhap" />
+          <ScalarProperty Name="dongiaban" ColumnName="dongiaban" />
+          <ScalarProperty Name="thoigianbaohanh" ColumnName="thoigianbaohanh" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DoRuous">
+      <EntityTypeMapping TypeName="QLBRModel.DoRuou">
+        <MappingFragment StoreEntitySet="DoRuou">
+          <ScalarProperty Name="mado" ColumnName="mado" />
+          <ScalarProperty Name="tendo" ColumnName="tendo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DungLuongs">
+      <EntityTypeMapping TypeName="QLBRModel.DungLuong">
+        <MappingFragment StoreEntitySet="DungLuong">
+          <ScalarProperty Name="madungluong" ColumnName="madungluong" />
+          <ScalarProperty Name="tendungluong" ColumnName="tendungluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HinhDangs">
+      <EntityTypeMapping TypeName="QLBRModel.HinhDang">
+        <MappingFragment StoreEntitySet="HinhDang">
+          <ScalarProperty Name="mahinhdang" ColumnName="mahinhdang" />
+          <ScalarProperty Name="tenhinhdang" ColumnName="tenhinhdang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoaDonBans">
+      <EntityTypeMapping TypeName="QLBRModel.HoaDonBan">
+        <MappingFragment StoreEntitySet="HoaDonBan">
+          <ScalarProperty Name="sohdb" ColumnName="sohdb" />
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="ngayban" ColumnName="ngayban" />
+          <ScalarProperty Name="makhach" ColumnName="makhach" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoaDonNhaps">
+      <EntityTypeMapping TypeName="QLBRModel.HoaDonNhap">
+        <MappingFragment StoreEntitySet="HoaDonNhap">
+          <ScalarProperty Name="sohdn" ColumnName="sohdn" />
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="ngaynhap" ColumnName="ngaynhap" />
+          <ScalarProperty Name="mancc" ColumnName="mancc" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Khachhangs">
+      <EntityTypeMapping TypeName="QLBRModel.Khachhang">
+        <MappingFragment StoreEntitySet="Khachhang">
+          <ScalarProperty Name="makhach" ColumnName="makhach" />
+          <ScalarProperty Name="tenkhach" ColumnName="tenkhach" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Loais">
+      <EntityTypeMapping TypeName="QLBRModel.Loai">
+        <MappingFragment StoreEntitySet="Loai">
+          <ScalarProperty Name="maloai" ColumnName="maloai" />
+          <ScalarProperty Name="tenloai" ColumnName="tenloai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MauSacs">
+      <EntityTypeMapping TypeName="QLBRModel.MauSac">
+        <MappingFragment StoreEntitySet="MauSac">
+          <ScalarProperty Name="mamau" ColumnName="mamau" />
+          <ScalarProperty Name="tenmau" ColumnName="tenmau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhaCungCaps">
+      <EntityTypeMapping TypeName="QLBRModel.NhaCungCap">
+        <MappingFragment StoreEntitySet="NhaCungCap">
+          <ScalarProperty Name="mancc" ColumnName="mancc" />
+          <ScalarProperty Name="tenncc" ColumnName="tenncc" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="QLBRModel.NhanVien">
+        <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="tennhanvien" ColumnName="tennhanvien" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="macv" ColumnName="macv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NuocSanXuats">
+      <EntityTypeMapping TypeName="QLBRModel.NuocSanXuat">
+        <MappingFragment StoreEntitySet="NuocSanXuat">
+          <ScalarProperty Name="manuocsx" ColumnName="manuocsx" />
+          <ScalarProperty Name="tennuocsx" ColumnName="tennuocsx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Cau6" FunctionName="QLBRModel.Store.Cau6">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLBRModel.Cau6_Result">
+          <ScalarProperty Name="makhach" ColumnName="makhach" />
+          <ScalarProperty Name="tenkhach" ColumnName="tenkhach" />
+          <ScalarProperty Name="mahang" ColumnName="mahang" />
+          <ScalarProperty Name="tenhang" ColumnName="tenhang" />
+          <ScalarProperty Name="TongSoluong" ColumnName="TongSoluong" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Cau9" FunctionName="QLBRModel.Store.Cau9">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLBRModel.Cau9_Result">
+          <ScalarProperty Name="mahang" ColumnName="mahang" />
+          <ScalarProperty Name="sohdb" ColumnName="sohdb" />
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+          <ScalarProperty Name="makhach" ColumnName="makhach" />
+          <ScalarProperty Name="ngayban" ColumnName="ngayban" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Cau8" FunctionName="QLBRModel.Store.Cau8">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLBRModel.Cau8_Result">
+          <ScalarProperty Name="nam" ColumnName="nam" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
